@@ -6,6 +6,7 @@ const questions = [
     b: "Coding Style Sheets",
     c: "Cascading Simple Sheets",
     d: "Cars SUVs & Sailboats",
+    e: "none of the above",
     correct: "a",
   },
   {
@@ -14,6 +15,7 @@ const questions = [
     b: "2021",
     c: "2022",
     d: "2023",
+    e: "none of the above",
     correct: "b",
   },
   {
@@ -21,8 +23,27 @@ const questions = [
     a: "Bosnia and Herzegovina Famous Foundation",
     b: "Bosnia and Herzegovina Futures Foundation",
     c: "Bosnia and Herzegovina Factory Foundation",
-    d: "none of the above",
+    d: "Bosnia and Herzegovina Farming Foundation",
+    e: "none of the above",
     correct: "b",
+  },
+  {
+    question: "What year did the Ottoman empire conquered Constantinople(Istanbul)? ",
+    a: "1463",
+    b: "1444",
+    c: "1500",
+    d: "1453",
+    e: "none of the above",
+    correct: "d",
+  },
+  {
+    question: "Which driver has the most wins in F1 history?",
+    a: "Sebastian Vettel",
+    b: "Michael Schumacher",
+    c: "Lewis Hamilton",
+    d: "Aryton Senna",
+    e: "none of the above",
+    correct: "c",
   },
 ];
 
@@ -34,6 +55,7 @@ const a_text = document.getElementById("a_text");
 const b_text = document.getElementById("b_text");
 const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
+const e_text = document.getElementById("e_text");
 const submitButton = document.getElementById("submit");
 
 //Counters
@@ -63,6 +85,7 @@ const loadQuiz = () => {
   b_text.innerText = currentQuizData.b;
   c_text.innerText = currentQuizData.c;
   d_text.innerText = currentQuizData.d;
+  e_text.innerText = currentQuizData.e;
 };
 
 //Loading the quiz
